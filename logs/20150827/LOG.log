@@ -1326,3 +1326,742 @@
 
 )
 ]	
+[2015-08-27 13:13:56]	[NOTICE]	[1440681236192_42348]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:13:56]	[NOTICE]	[1440681236192_42348]	[]	[Array
+(
+    [model] => {"username":"litz","userpwd":"123456"}
+)
+]	
+[2015-08-27 13:13:56]	[NOTICE]	[1440681236192_42348]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 22
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:13:57]	[NOTICE]	[1440681237260_18622]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:13:57]	[NOTICE]	[1440681237260_18622]	[]	[Array
+(
+)
+]	
+[2015-08-27 13:13:57]	[NOTICE]	[1440681237260_18622]	[]	[=======================]	
+[2015-08-27 13:13:57]	[NOTICE]	[1440681237260_18622]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 23
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:14:43]	[NOTICE]	[1440681283295_93150]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:14:43]	[NOTICE]	[1440681283295_93150]	[]	[Array
+(
+)
+]	
+[2015-08-27 13:14:43]	[NOTICE]	[1440681283295_93150]	[]	[=======================]	
+[2015-08-27 13:14:43]	[NOTICE]	[1440681283295_93150]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 24
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:14:44]	[NOTICE]	[1440681284513_58459]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:14:44]	[NOTICE]	[1440681284513_58459]	[]	[Array
+(
+    [model] => {"username":"admin","userpwd":"admin"}
+)
+]	
+[2015-08-27 13:14:44]	[NOTICE]	[1440681284513_58459]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 25
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:14:45]	[NOTICE]	[1440681285573_19175]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:14:45]	[NOTICE]	[1440681285573_19175]	[]	[Array
+(
+)
+]	
+[2015-08-27 13:14:45]	[NOTICE]	[1440681285573_19175]	[]	[=======================]	
+[2015-08-27 13:14:45]	[NOTICE]	[1440681285573_19175]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 26
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:14:56]	[NOTICE]	[1440681296765_53457]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:14:56]	[NOTICE]	[1440681296765_53457]	[]	[Array
+(
+    [model] => {"username":"litz","userpwd":"123456"}
+)
+]	
+[2015-08-27 13:14:56]	[NOTICE]	[1440681296765_53457]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 27
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:14:57]	[NOTICE]	[1440681297811_30474]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:14:57]	[NOTICE]	[1440681297811_30474]	[]	[Array
+(
+)
+]	
+[2015-08-27 13:14:57]	[NOTICE]	[1440681297811_30474]	[]	[=======================]	
+[2015-08-27 13:14:57]	[NOTICE]	[1440681297811_30474]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 28
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:15:14]	[NOTICE]	[1440681314236_44357]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:15:14]	[NOTICE]	[1440681314236_44357]	[]	[Array
+(
+    [model] => {"username":"litz","userpwd":"123456"}
+)
+]	
+[2015-08-27 13:15:14]	[NOTICE]	[1440681314236_44357]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 29
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:15:15]	[NOTICE]	[1440681315306_26149]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:15:15]	[NOTICE]	[1440681315306_26149]	[]	[Array
+(
+)
+]	
+[2015-08-27 13:15:18]	[NOTICE]	[1440681315306_26149]	[]	[=======================]	
+[2015-08-27 13:15:19]	[NOTICE]	[1440681315306_26149]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 30
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:37:04]	[NOTICE]	[1440682624914_80335]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:37:04]	[NOTICE]	[1440682624914_80335]	[]	[Array
+(
+    [model] => {"username":"litz","userpwd":"123456"}
+)
+]	
+[2015-08-27 13:37:04]	[NOTICE]	[1440682624914_80335]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 31
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:46:56]	[NOTICE]	[1440683216616_90684]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:46:56]	[NOTICE]	[1440683216616_90684]	[]	[Array
+(
+    [model] => {"username":"admin","userpwd":"admin"}
+)
+]	
+[2015-08-27 13:46:56]	[NOTICE]	[1440683216616_90684]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 32
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:46:57]	[NOTICE]	[1440683217689_53283]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:47:00]	[NOTICE]	[1440683220484_63021]	[]	[/mylogin/index.php?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=14406786117091]	
+[2015-08-27 13:47:06]	[NOTICE]	[1440683226574_20829]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:47:06]	[NOTICE]	[1440683226574_20829]	[]	[Array
+(
+    [model] => {"username":"litz","userpwd":"123456"}
+)
+]	
+[2015-08-27 13:47:06]	[NOTICE]	[1440683226574_20829]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 35
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:47:07]	[NOTICE]	[1440683227634_37610]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:47:11]	[NOTICE]	[1440683231158_96891]	[]	[/mylogin/index.php?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=14406786117091]	
+[2015-08-27 13:47:21]	[NOTICE]	[1440683241420_61126]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:47:21]	[NOTICE]	[1440683241420_61126]	[]	[Array
+(
+    [model] => {"username":"admin","userpwd":"admin"}
+)
+]	
+[2015-08-27 13:47:21]	[NOTICE]	[1440683241420_61126]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 38
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:47:22]	[NOTICE]	[1440683242481_63014]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:47:25]	[NOTICE]	[1440683245014_99215]	[]	[/mylogin/index.php?XDEBUG_SESSION_START=ECLIPSE_DBGP&KEY=14406786117091]	
+[2015-08-27 13:47:53]	[NOTICE]	[1440683273563_68101]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:47:53]	[NOTICE]	[1440683273563_68101]	[]	[Array
+(
+    [model] => {"username":"admin","userpwd":"admin"}
+)
+]	
+[2015-08-27 13:47:53]	[NOTICE]	[1440683273563_68101]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 41
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:47:54]	[NOTICE]	[1440683274633_83232]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:47:58]	[NOTICE]	[1440683278177_71027]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:48:59]	[NOTICE]	[1440683339159_60575]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:49:03]	[NOTICE]	[1440683343621_58582]	[]	[/mylogin/index.php/]	
+[2015-08-27 13:49:07]	[NOTICE]	[1440683347505_54729]	[]	[/mylogin/]	
+[2015-08-27 13:49:11]	[NOTICE]	[1440683351655_99453]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:49:11]	[NOTICE]	[1440683351655_99453]	[]	[Array
+(
+    [model] => {"username":"admin","userpwd":"admin"}
+)
+]	
+[2015-08-27 13:49:11]	[NOTICE]	[1440683351655_99453]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 47
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:49:12]	[NOTICE]	[1440683352730_33254]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:49:15]	[NOTICE]	[1440683355446_44382]	[]	[/mylogin/]	
+[2015-08-27 13:49:17]	[NOTICE]	[1440683357650_81574]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:49:17]	[NOTICE]	[1440683357650_81574]	[]	[Array
+(
+    [model] => {"username":"admin","userpwd":"admin"}
+)
+]	
+[2015-08-27 13:49:17]	[NOTICE]	[1440683357650_81574]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 50
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:49:18]	[NOTICE]	[1440683358709_20378]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:50:15]	[NOTICE]	[1440683415529_30325]	[]	[/mylogin/]	
+[2015-08-27 13:50:17]	[NOTICE]	[1440683417303_77767]	[]	[/mylogin/]	
+[2015-08-27 13:50:34]	[NOTICE]	[1440683434772_32161]	[]	[/mylogin/]	
+[2015-08-27 13:50:52]	[NOTICE]	[1440683452764_77967]	[]	[/mylogin/]	
+[2015-08-27 13:50:53]	[NOTICE]	[1440683453945_61615]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:50:53]	[NOTICE]	[1440683453945_61615]	[]	[Array
+(
+    [model] => {"username":"admin","userpwd":"admin"}
+)
+]	
+[2015-08-27 13:50:53]	[NOTICE]	[1440683453945_61615]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 56
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:51:03]	[NOTICE]	[1440683463852_22366]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:51:03]	[NOTICE]	[1440683463852_22366]	[]	[Array
+(
+    [model] => {"username":"litz","userpwd":"123456"}
+)
+]	
+[2015-08-27 13:51:03]	[NOTICE]	[1440683463852_22366]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 57
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:51:04]	[NOTICE]	[1440683464912_66921]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:52:00]	[NOTICE]	[1440683520443_47590]	[]	[/mylogin/]	
+[2015-08-27 13:52:01]	[NOTICE]	[1440683521539_53082]	[]	[/mylogin/]	
+[2015-08-27 13:52:02]	[NOTICE]	[1440683522975_77260]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:52:02]	[NOTICE]	[1440683522975_77260]	[]	[Array
+(
+    [model] => {"username":"admin","userpwd":"admin"}
+)
+]	
+[2015-08-27 13:52:02]	[NOTICE]	[1440683522975_77260]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 61
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:52:06]	[NOTICE]	[1440683526931_14873]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:52:06]	[NOTICE]	[1440683526931_14873]	[]	[Array
+(
+    [model] => {"username":"admin","userpwd":"admin"}
+)
+]	
+[2015-08-27 13:52:06]	[NOTICE]	[1440683526931_14873]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 62
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:52:13]	[NOTICE]	[1440683533948_51673]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:52:13]	[NOTICE]	[1440683533948_51673]	[]	[Array
+(
+    [model] => {"username":"litz","userpwd":"123456"}
+)
+]	
+[2015-08-27 13:52:13]	[NOTICE]	[1440683533948_51673]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 63
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:52:15]	[NOTICE]	[1440683535011_78159]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:52:34]	[NOTICE]	[1440683554161_15831]	[]	[/mylogin/index.php/home/login]	
+[2015-08-27 13:52:36]	[NOTICE]	[1440683556338_13490]	[]	[/mylogin/]	
+[2015-08-27 13:52:38]	[NOTICE]	[1440683558008_11986]	[]	[/mylogin/]	
+[2015-08-27 13:52:44]	[NOTICE]	[1440683564133_47220]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:52:44]	[NOTICE]	[1440683564133_47220]	[]	[Array
+(
+    [model] => {"username":"admin","userpwd":"admin"}
+)
+]	
+[2015-08-27 13:52:44]	[NOTICE]	[1440683564133_47220]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 68
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:53:33]	[NOTICE]	[1440683613106_26781]	[]	[/mylogin/index.php/home/check]	
+[2015-08-27 13:53:33]	[NOTICE]	[1440683613106_26781]	[]	[Array
+(
+    [model] => {"username":"litz","userpwd":"123456"}
+)
+]	
+[2015-08-27 13:53:33]	[NOTICE]	[1440683613106_26781]	[]	[DbKit Object
+(
+    [_mysqli:protected] => mysqli Object
+        (
+            [affected_rows] => 0
+            [client_info] => mysqlnd 5.0.8-dev - 20102224 - $Revision: 310735 $
+            [client_version] => 50008
+            [connect_errno] => 0
+            [connect_error] => 
+            [errno] => 0
+            [error] => 
+            [field_count] => 0
+            [host_info] => localhost via TCP/IP
+            [info] => 
+            [insert_id] => 0
+            [server_info] => 5.5.16-log
+            [server_version] => 50516
+            [sqlstate] => 00000
+            [protocol_version] => 10
+            [thread_id] => 69
+            [warning_count] => 0
+        )
+
+)
+]	
+[2015-08-27 13:53:34]	[NOTICE]	[1440683614170_83721]	[]	[/mylogin/index.php/home/login]	

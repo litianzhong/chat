@@ -26,6 +26,7 @@ class homeController extends Controller {
         	$info=$model->checkUser($user);
         	$msg=array();
         	if($info["flag"]){
+        		Application::$_lib["SessionAuth"]->set("_USER", $user->username);//校验成功放入session
         		$msg = array(
         				"code" => "1",
         				"tip" => "welcome!".$info['name'],
@@ -42,14 +43,9 @@ class homeController extends Controller {
          * login ajax
          */
         public function login(){
-        	parent::$LogUtil->log(print_r($_POST,true));
-        	$model=$this->model("home");//获得model
-        	$user=json_decode($_POST["model"]);
-        	$info=$model->checkUser($user);
-        	$msg=array();
-        	if($info["flag"]){
-        		Application::$_lib["SessionAuth"]->set("_USER", $user->username);//校验成功放入session
-        		$this->display("login.html");
+        	$user=Application::$_lib["SessionAuth"]->get("_USER");
+        	if($user){
+        		$this->display("main.html");
         	}else{
         		$this->display("login.html");
         	}

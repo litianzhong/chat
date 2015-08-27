@@ -39,7 +39,9 @@ $(function () {
                 $("#errorid").hide();
 				login.save(null,{success:function(model,response){
 					 $("#errorid").show().html(response.tip);
-					setTimeout("window.location.href='/mylogin/index.php/home/login'", 1000);
+					 if(response.code=="1"){
+					 setTimeout("window.location.href='/mylogin/index.php/home/login'", 1000);
+					 }
 	            }},{error:function(err){  
 	            	 $("#errorid").show().html(err); 
 	            }});
