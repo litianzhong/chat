@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-08-27 13:09:09
+<?php /* Smarty version Smarty-3.1.19, created on 2015-08-28 12:06:37
          compiled from "D:\workspace\mylogin\web\view\login.html" */ ?>
-<?php /*%%SmartyHeaderCode:1467655df0bf5223824-91158794%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2496655e04ecd9e1894-28511420%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '89e131a06a1d52e9473e4af4a3214d9ef89163f6' => 
     array (
       0 => 'D:\\workspace\\mylogin\\web\\view\\login.html',
-      1 => 1440680499,
+      1 => 1440741197,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1467655df0bf5223824-91158794',
+  'nocache_hash' => '2496655e04ecd9e1894-28511420',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_55df0bf52a4096_21584241',
+  'unifunc' => 'content_55e04ecda4bdb3_06071854',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55df0bf52a4096_21584241')) {function content_55df0bf52a4096_21584241($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_55e04ecda4bdb3_06071854')) {function content_55e04ecda4bdb3_06071854($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
@@ -31,29 +31,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="李天中">
 </head>
-<link class="bootstrap library" rel="stylesheet" type="text/css"
-	href="<?php echo $_smarty_tpl->tpl_vars['STATIC_URL']->value;?>
-plugins/bootstrap/css/bootstrap.min.css">
-<script class="bootstrap library"
-	src="<?php echo $_smarty_tpl->tpl_vars['STATIC_URL']->value;?>
-plugins/jquery/jquery-1.11.0.min.js"
-	type="text/javascript"></script>
-<script class="bootstrap library"
-	src="<?php echo $_smarty_tpl->tpl_vars['STATIC_URL']->value;?>
-plugins/bootstrap/js/bootstrap.min.js"
-	type="text/javascript"></script>
-<script 
-	src="<?php echo $_smarty_tpl->tpl_vars['STATIC_URL']->value;?>
-plugins/backbone/underscore-min.js"
-	type="text/javascript"></script>
-<script 
-	src="<?php echo $_smarty_tpl->tpl_vars['STATIC_URL']->value;?>
-plugins/backbone/backbone-min.js"
-	type="text/javascript"></script>
+<?php echo $_smarty_tpl->getSubTemplate ("include.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('backBtn'=>true,'reloadBtn'=>true), 0);?>
+
 <script 
 	src="<?php echo $_smarty_tpl->tpl_vars['STATIC_URL']->value;?>
 resource/js/login.js"
 	type="text/javascript"></script>
+
 <style type="text/css">
 body {
 	padding-top: 40px;
@@ -98,9 +82,23 @@ h2{
 a{
 	color: darkgray;
 }
+.popWindow {  
+        background-color:#9D9D9D;  
+        width: 100%;  
+        height: 100%;  
+        left: 0;  
+        top: 0;  
+        filter: alpha(opacity=50);  
+        opacity: 0.5;  
+        z-index: 1;  
+        position: absolute;  
+          
+    }
+    
 </style>
 </head>
 <body>
+ 	<div id="popWindow" class="popWindow" style="display: none;"> load...</div>  
 	<div class="container" id="main">
 
 		<form class="form-signin" method="post">

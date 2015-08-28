@@ -29,7 +29,7 @@ class homeController extends Controller {
         		Application::$_lib["SessionAuth"]->set("_USER", $user->username);//校验成功放入session
         		$msg = array(
         				"code" => "1",
-        				"tip" => "welcome!".$info['name'],
+        				"tip" => "",
         		);//成功提示信息
         	}else{
         		$msg = array(
