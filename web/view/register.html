@@ -66,17 +66,61 @@ a{
     }
 
 </style>
+<script type="text/javascript">
+$(function(){
+	$("#userid").blur(function(){
+		var id=$('#userid').val();
+		 $.ajax({  
+	         type:"POST", 
+	         url:_request+"index.php/home/valid",  
+	         dataType:"json",  
+	         data:{msg:msg},  
+	         success:function(data,textStatus){
+	        	 $('#msg').val('');
+	        	 $('#msg').focus();
+	         },
+	         error: function(XMLHttpRequest,textStatus,errorThrown){   
+	               
+	         }  
+	     });  
+	});
+	$("#btnReg").blur(function(){
+		var id=$('#userid').val();
+		var username=$('#username').val();
+		var password=$('#password').val();
+		var password1=$('#password1').val();
+		if(password!=password1){
+			$('#errorid').html(" ");
+		}
+		 $.ajax({  
+	         type:"POST", 
+	         url:_request+"index.php/home/register",  
+	         dataType:"json",  
+	         data:{msg:msg},  
+	         success:function(data,textStatus){
+	        	 $('#msg').val('');
+	        	 $('#msg').focus();
+	         },
+	         error: function(XMLHttpRequest,textStatus,errorThrown){   
+	               
+	         }  
+	     });  
+	});
+	
+	
+});
+</script>
 </head>
 <body>
 	<div class="container" id="main">
 
 		<form class="form-signin" method="post">
 			<h2 class="form-signin-heading">注册</h2>
-			<input type="text" class="input-block-level"placeholder="帐号" id="" >
+			<input type="text" class=" input-danger"placeholder="帐号" id="userid" >
 			<input type="text" class="input-block-level"placeholder="昵称" id="username" >
 			<input type="password" class="input-block-level" placeholder="密码" id="userpwd">
-			<input type="password" class="input-block-level" placeholder="密码" id="userpwd1"> 
-			<button class="btn  btn-primary" type="button" id="btnLogin" >注册</button>
+			<input type="password" class="input-block-level" placeholder="确认密码" id="userpwd1"> 
+			<button class="btn  btn-primary" type="button" id="btnReg" >注册</button>
 			
 			<div id="errorid" class="form-error"></div>
 		</form>

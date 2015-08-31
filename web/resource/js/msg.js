@@ -33,9 +33,7 @@ var chat={
 		         },  
 
 		         error: function(XMLHttpRequest,textStatus,errorThrown){  
-		                 alert("error:"+textStatus);  
-		                 if(textStatus=="timeout")  
-		                     alert("timeout!");
+		              
 		         }  
 		     });  
 		},

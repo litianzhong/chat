@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-08-30 13:35:17
+<?php /* Smarty version Smarty-3.1.19, created on 2015-08-31 03:42:57
          compiled from "E:\phpspace\chat\web\view\main.html" */ ?>
-<?php /*%%SmartyHeaderCode:2615855e3069560e781-64867255%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1080855e3cd41223636-39057843%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'af1589875d79de657a5c89e53a7f10f2556139d7' => 
     array (
       0 => 'E:\\phpspace\\chat\\web\\view\\main.html',
-      1 => 1440931138,
+      1 => 1440942179,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2615855e3069560e781-64867255',
+  'nocache_hash' => '1080855e3cd41223636-39057843',
   'function' => 
   array (
   ),
@@ -21,13 +21,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_55e30695678100_16432650',
+  'unifunc' => 'content_55e3cd41282898_95423546',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55e30695678100_16432650')) {function content_55e30695678100_16432650($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_55e3cd41282898_95423546')) {function content_55e3cd41282898_95423546($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>系统登录</title>
+<title>聊天室</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="李天中">
 </head>

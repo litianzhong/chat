@@ -1,29 +1,29 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-08-30 13:42:09
+<?php /* Smarty version Smarty-3.1.19, created on 2015-08-31 04:02:41
          compiled from "E:\phpspace\chat\web\view\register.html" */ ?>
-<?php /*%%SmartyHeaderCode:2843655e30831e27d54-80338458%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:324455e3d1e1a67b67-85658600%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '3175e5f0120e599339eba93d104f578e85d2dddb' => 
     array (
       0 => 'E:\\phpspace\\chat\\web\\view\\register.html',
-      1 => 1440938564,
+      1 => 1440993757,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2843655e30831e27d54-80338458',
+  'nocache_hash' => '324455e3d1e1a67b67-85658600',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_55e30831e696b4_84643922',
+  'unifunc' => 'content_55e3d1e1ad2d28_73159056',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55e30831e696b4_84643922')) {function content_55e30831e696b4_84643922($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_55e3d1e1ad2d28_73159056')) {function content_55e3d1e1ad2d28_73159056($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>系统登录</title>
+<title>注册</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="李天中">
 </head>
@@ -86,16 +86,23 @@ a{
         position: absolute;  
           
     }
-    id
+
 </style>
+<script type="text/javascript">
+$(function(){
+	$("#userid").blur(function(){
+		$(this).removeClass();
+	});
+	
+});
+</script>
 </head>
 <body>
- 	<div id="popWindow" class="popWindow" style="display: none;"> load...</div>  
 	<div class="container" id="main">
 
 		<form class="form-signin" method="post">
-			<h2 class="form-signin-heading">登录</h2>
-			<input type="text" class="input-block-level"placeholder="帐号" id="" >
+			<h2 class="form-signin-heading">注册</h2>
+			<input type="text" class=" text-danger"placeholder="帐号" id="userid" >
 			<input type="text" class="input-block-level"placeholder="昵称" id="username" >
 			<input type="password" class="input-block-level" placeholder="密码" id="userpwd">
 			<input type="password" class="input-block-level" placeholder="密码" id="userpwd1"> 
