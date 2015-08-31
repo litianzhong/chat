@@ -55,7 +55,7 @@ class chatModel extends Model {
 	 * select user list
 	 */
 	public function selectUsers(){
-		$sql="select name from session where flag='1'";
+		$sql="select id,name from session where flag='1'";
 		return $this->db->rawQuery($sql);
 	
 	}

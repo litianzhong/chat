@@ -21,22 +21,16 @@ class chatController extends Controller {
 		$id = Application::$_lib ["SessionAuth"]->get ( "_ID" );
 		$username = Application::$_lib ["SessionAuth"]->get ( "_USER" );
 		session_write_close ();
-		/***
+		/**
 		 * 
 		 */
 		$model = $this->model ( "chat" ); // 获得model
-		$model->updateLoginone ( $id ); // 更新登陆最新心跳时间
-		if ($model->selectStateCount ( self::exp ) > 0) {
-			$model->updateLogin ( self::exp );
-			$model->updateNotice ();
-		}
-		
+		$this->checkLogin();
 		$i = 0;
 		while ( true ) {
 			$sessionState = $model->selectLogin ( $id );
-			parent::$LogUtil->log ( "test" . $sessionState );
-			if ($sessionState == '1') { // 有变化
-				$model->updateState ( $id );
+			if ($sessionState == '1') { // changed
+				$model->updateState ( $id ); // change state
 			}
 			$info = cache::get ( $id );
 			$message = $info ["message"];
@@ -48,7 +42,6 @@ class chatController extends Controller {
 				} else {
 					$userlist = array ();
 				}
-				parent::$LogUtil->log ( print_r ( $userlist, true ) );
 				$retMsg = array (
 						"user" => $userlist,
 						"message" => $message 
@@ -58,7 +51,6 @@ class chatController extends Controller {
 			}
 			usleep ( self::sleeptime );
 			$i ++;
-			parent::$LogUtil->log ( $i );
 			if ($i * 2 == self::time) {
 				echo json_encode ( "" );
 				exit ();
@@ -75,7 +67,6 @@ class chatController extends Controller {
 		$userid = Application::$_lib ["SessionAuth"]->get ( "_ID" );
 		$username = Application::$_lib ["SessionAuth"]->get ( "_USER" );
 		session_write_close ();
-		$id = "userlist";
 		$userList = cache::get ( $id );
 		foreach ( $userList as $key => $value ) {
 			parent::$LogUtil->log ( $key );
@@ -102,5 +93,19 @@ class chatController extends Controller {
 	private function checkLogin() {
 		$time = microtime ( true );
 		cache::set ( $id . "session", $userstat );
+	}
+	/**
+	 * *
+	 * check expried
+	 * 
+	 * @param object $model        	
+	 * @param String $id        	
+	 */
+	private function checkLogin($model, $id) {
+		$model->updateLoginone ( $id ); // 更新登陆最新心跳时间
+		if ($model->selectStateCount ( self::exp ) > 0) {
+			$model->updateLogin ( self::exp );
+			$model->updateNotice ();
+		}
 	}
 }
