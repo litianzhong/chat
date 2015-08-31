@@ -20,7 +20,7 @@ $CONFIG ['system'] ['route'] = array (
 $CONFIG ['system'] ['db'] = array (
 		'host' => 'localhost', // database ip
 		'user' => 'root', //  database user
-		'password' => '123',
+		'password' => '',
 		'db'=>'testdb'   
 );
 ?>

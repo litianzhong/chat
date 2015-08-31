@@ -2,7 +2,7 @@ $(function () {
 	Backbone.emulateJSON=true;
     //构建登录对象模型
     var Login = Backbone.Model.extend({
-		url : '/mylogin/index.php/home/check',
+		url : _request+'index.php/home/check',
         validate: function (attrData) {
         	var msg=""
             for (var obj in attrData) {
@@ -41,7 +41,8 @@ $(function () {
 					 $("#errorid").show().html(response.tip);
 					 if(response.code=="1"){
 						 $(this).ShowMask();
-						 setTimeout("window.location.href='/mylogin/index.php/home/login'", 1000);
+						 var url="window.location.href='"+_request+"index.php/home/login'";
+						 setTimeout(url, 1000);
 					 }
 	            }},{error:function(err){  
 	            	 $("#errorid").show().html(err); 

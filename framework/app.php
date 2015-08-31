@@ -10,7 +10,7 @@ define('SYS_CORE_PATH', SYSTEM_PATH.'/base');
 define('CONTROLLER_PATH', ROOT_PATH.'/controller');
 define('MODEL_PATH', ROOT_PATH.'/model');
 define('VIEW_PATH', ROOT_PATH.'/view');
-define("BASE_URL", '/mylogin/');
+define("BASE_URL", '/chat/');
 define("STATIC_URL", BASE_URL.'web/');
 define('LOG_PATH', substr(SYSTEM_PATH, 0,-10).DIRECTORY_SEPARATOR.'logs'.DIRECTORY_SEPARATOR);
 final class Application {

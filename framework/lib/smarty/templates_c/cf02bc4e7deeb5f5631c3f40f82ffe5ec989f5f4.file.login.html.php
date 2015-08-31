@@ -1,4 +1,29 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.19, created on 2015-08-30 13:42:08
+         compiled from "E:\phpspace\chat\web\view\login.html" */ ?>
+<?php /*%%SmartyHeaderCode:2589455e3083044f838-76921124%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    'cf02bc4e7deeb5f5631c3f40f82ffe5ec989f5f4' => 
+    array (
+      0 => 'E:\\phpspace\\chat\\web\\view\\login.html',
+      1 => 1440942121,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2589455e3083044f838-76921124',
+  'function' => 
+  array (
+  ),
+  'variables' => 
+  array (
+    'STATIC_URL' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.19',
+  'unifunc' => 'content_55e308304b6b53_93302761',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_55e308304b6b53_93302761')) {function content_55e308304b6b53_93302761($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
@@ -6,9 +31,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="李天中">
 </head>
-{{include file="include.html"  backBtn=true reloadBtn=true}}
+<?php echo $_smarty_tpl->getSubTemplate ("include.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('backBtn'=>true,'reloadBtn'=>true), 0);?>
+
 <script 
-	src="{{$STATIC_URL}}resource/js/login.js"
+	src="<?php echo $_smarty_tpl->tpl_vars['STATIC_URL']->value;?>
+resource/js/login.js"
 	type="text/javascript"></script>
 
 <style type="text/css">
@@ -94,3 +121,4 @@ $(function(){
 	</div>
 </body>
 </html>
+<?php }} ?>
