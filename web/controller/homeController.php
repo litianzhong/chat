@@ -24,6 +24,15 @@ class homeController extends Controller {
 			parent::$LogUtil->log(print_r($_POST,true));
         	$model=$this->model("home");//获得model
         	$user=json_decode($_POST["model"]);
+        	if($model->countLogin($user)>0){// if user has login
+        		$msg = array(
+        				"code" => "0",
+        				"tip" => "user has login!",
+        		);//成功提示信息
+        		echo json_encode($msg);
+        		exit();
+        	}
+        	
         	$info=$model->checkUser($user);
         	$msg=array();
         	if($info["flag"]){
@@ -47,37 +56,32 @@ class homeController extends Controller {
         public function login(){
         	$user=Application::$_lib["SessionAuth"]->get("_USER");
         	if($user){
-        		$id="userlist";
-        		$userList=cache::get($id);
-        		$userid=Application::$_lib["SessionAuth"]->get("_ID");
-        		if(isset($userList)){
-        		$userList[$userid]=$user;
-        		}else{
-        			$userList=array($user);
-        		}
-        		cache::set($id, $userList);
-        		/**notice user login*/
-        		$userList = cache::get ( $id );
-        		foreach ( $userList as $key => $value ) {
-        			$info = cache::get ( $key."login" );
-        			$state = $info ["state"];
-        			if (! empty ( $info )) {
-        				$info["state"]="1";
-        			} else {
-        				$info=array("state"=>"1");
-        			}
-        			cache::set ( $key."login", $info );
-        		}
+        		/***notice user*/
+        		$this->dbLogin($userid,$user);
+     
         		$this->display("main.html");
         	}else{
         		$this->display("login.html");
         	}
         	
         }
-        
+        /***
+         * 
+         */
         public function forRegister(){
         		$this->display("register.html");
         	 
+        }
+        /***
+         * record database
+         * @param String $id
+         * @param String $name
+         */
+        private function dbLogin($id,$name){
+        	
+        	$model=$this->model("home");//获得model
+        	$model->dbLogin($id,$name);//update or insert login info
+        	$model->updateLogin($id);//notice others
         }
 }
 

@@ -8,6 +8,7 @@ require "cache.php";
 class chatController extends Controller {
 	const sleeptime = 500000;
 	const time = 20;
+	const exp = 30;
 	public function __construct() {
 		parent::__construct ();
 	}
@@ -20,25 +21,38 @@ class chatController extends Controller {
 		$id = Application::$_lib ["SessionAuth"]->get ( "_ID" );
 		$username = Application::$_lib ["SessionAuth"]->get ( "_USER" );
 		session_write_close ();
+		/***
+		 * 
+		 */
+		$model = $this->model ( "chat" ); // 获得model
+		$model->updateLoginone ( $id ); // 更新登陆最新心跳时间
+		if ($model->selectStateCount ( self::exp ) > 0) {
+			$model->updateLogin ( self::exp );
+			$model->updateNotice ();
+		}
+		
 		$i = 0;
 		while ( true ) {
+			$sessionState = $model->selectLogin ( $id );
+			parent::$LogUtil->log ( "test" . $sessionState );
+			if ($sessionState == '1') { // 有变化
+				$model->updateState ( $id );
+			}
 			$info = cache::get ( $id );
 			$message = $info ["message"];
-			$userstat=cache::get($id."login");
-			$state=$userstat["state"];
-			if (! empty ( $message )||$state=="1") {//if has message or userlist change
-				$info["message"]=array();
-				if($state=="1"){
-					$userstat["state"]="0";
-					cache::set ( $id."login", $userstat );
-				}
+			if (! empty ( $message ) || $sessionState == "1") { // if has message or userlist change
+				$info ["message"] = array ();
 				cache::set ( $id, $info );
-				if($state=="1"){
-					$userlist=cache::get("userlist");
-				}else{
-					$userlist=array();
+				if ($sessionState == "1") {
+					$userlist = $model->selectUsers ();
+				} else {
+					$userlist = array ();
 				}
-				$retMsg=array("user"=>$userlist,"message"=>$message);
+				parent::$LogUtil->log ( print_r ( $userlist, true ) );
+				$retMsg = array (
+						"user" => $userlist,
+						"message" => $message 
+				);
 				echo json_encode ( $retMsg );
 				exit ();
 			}
@@ -64,7 +78,7 @@ class chatController extends Controller {
 		$id = "userlist";
 		$userList = cache::get ( $id );
 		foreach ( $userList as $key => $value ) {
-			parent::$LogUtil->log($key);
+			parent::$LogUtil->log ( $key );
 			$info = cache::get ( $key );
 			$messages = $info ["message"];
 			$message = $username . ":" . $msg;
@@ -80,5 +94,13 @@ class chatController extends Controller {
 		}
 		echo json_encode ( "" );
 		exit ();
+	}
+	/**
+	 * *
+	 * check user is login;
+	 */
+	private function checkLogin() {
+		$time = microtime ( true );
+		cache::set ( $id . "session", $userstat );
 	}
 }
