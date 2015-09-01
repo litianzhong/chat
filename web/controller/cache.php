@@ -302,3 +302,5 @@ class cache
 // $arr=array("222","3333","4444");
 // cache::set("litz", $arr);
 // echo print_r(cache::get("litz");
+//$state=cache::get("__corn");
+//echo $state;
