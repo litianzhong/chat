@@ -24,6 +24,10 @@ class chatController extends Controller {
 		parent::$LogUtil->log(date('Y-m-d h:i:s',time()));
 		$model = $this->model ( "chat" ); // 获得model
 		$model->updateLoginone ( $id ); // 更新登陆最新心跳时间
+		if ($model->selectStateCount ( self::exp ) > 0) {
+			$model->updateLogin ( self::exp );
+			$model->updateNotice ();
+		}
 		parent::$LogUtil->log(date('Y-m-d h:i:s',time()));
 		$i = 0;
 		while ( true ) {
