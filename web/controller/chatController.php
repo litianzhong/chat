@@ -17,21 +17,18 @@ class chatController extends Controller {
 	 */
 	public function getMsgs() {
 		set_time_limit ( 0 ); // 无限请求超时时间
-		$i = 0;
+		$starttime = time (); // begin time
 		$id = Application::$_lib ["SessionAuth"]->get ( "_ID" );
 		$username = Application::$_lib ["SessionAuth"]->get ( "_USER" );
 		session_write_close ();
-		/**
-		 * 
-		 */
+		parent::$LogUtil->log(date('Y-m-d h:i:s',time()));
 		$model = $this->model ( "chat" ); // 获得model
-		$this->checkLogin();
+		$model->updateLoginone ( $id ); // 更新登陆最新心跳时间
+		parent::$LogUtil->log(date('Y-m-d h:i:s',time()));
 		$i = 0;
 		while ( true ) {
-			$sessionState = $model->selectLogin ( $id );
-			if ($sessionState == '1') { // changed
-				$model->updateState ( $id ); // change state
-			}
+			parent::$LogUtil->log(date('Y-m-d h:i:s',time()));
+			$sessionState = $model->selectLogin ( $id ); // get notice
 			$info = cache::get ( $id );
 			$message = $info ["message"];
 			if (! empty ( $message ) || $sessionState == "1") { // if has message or userlist change
@@ -39,6 +36,7 @@ class chatController extends Controller {
 				cache::set ( $id, $info );
 				if ($sessionState == "1") {
 					$userlist = $model->selectUsers ();
+					$model->updateState ( $id ); // change state
 				} else {
 					$userlist = array ();
 				}
@@ -50,8 +48,8 @@ class chatController extends Controller {
 				exit ();
 			}
 			usleep ( self::sleeptime );
-			$i ++;
-			if ($i * 2 == self::time) {
+			
+			if ((time () - $starttime) >= self::time) { // timeout
 				echo json_encode ( "" );
 				exit ();
 			}
@@ -62,17 +60,17 @@ class chatController extends Controller {
 	 */
 	public function sendMsg() {
 		header ( 'Content-Type: application/json; charset=utf-8' );
-		parent::$LogUtil->log ( print_r ( $_POST, true ) );
+		$model = $this->model ( "chat" ); // get model
 		$msg = $_POST ["msg"];
 		$userid = Application::$_lib ["SessionAuth"]->get ( "_ID" );
 		$username = Application::$_lib ["SessionAuth"]->get ( "_USER" );
 		session_write_close ();
-		$userList = cache::get ( $id );
-		foreach ( $userList as $key => $value ) {
-			parent::$LogUtil->log ( $key );
-			$info = cache::get ( $key );
+		$userList = $model->selectUsers ();
+		$currtime = date ( 'Y-m-d H:i:s', time () );
+		foreach ( $userList as $value ) {
+			$info = cache::get ( $value ["id"] );
 			$messages = $info ["message"];
-			$message = $username . ":" . $msg;
+			$message = $username . "[" . $currtime . "]:" . $msg;
 			if (! empty ( $messages )) {
 				$messages [] = $message;
 			} else {
@@ -81,31 +79,21 @@ class chatController extends Controller {
 				);
 			}
 			$info ["message"] = $messages;
-			cache::set ( $key, $info );
+			cache::set ( $value ["id"], $info );
 		}
 		echo json_encode ( "" );
 		exit ();
 	}
 	/**
 	 * *
-	 * check user is login;
+	 * logout
 	 */
-	private function checkLogin() {
-		$time = microtime ( true );
-		cache::set ( $id . "session", $userstat );
-	}
-	/**
-	 * *
-	 * check expried
-	 * 
-	 * @param object $model        	
-	 * @param String $id        	
-	 */
-	private function checkLogin($model, $id) {
-		$model->updateLoginone ( $id ); // 更新登陆最新心跳时间
-		if ($model->selectStateCount ( self::exp ) > 0) {
-			$model->updateLogin ( self::exp );
-			$model->updateNotice ();
-		}
+	public function logout() {
+		$id = Application::$_lib ["SessionAuth"]->get ( "_ID" );
+		$model = $this->model ( "chat" ); // 获得model
+		$model->logout ( $id );
+		$model->updateNotice ();
+		session_destroy ();
+		$this->display ( "login.html" );
 	}
 }

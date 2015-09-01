@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2015-08-31 03:42:57
+<?php /* Smarty version Smarty-3.1.19, created on 2015-09-01 04:21:26
          compiled from "E:\phpspace\chat\web\view\main.html" */ ?>
-<?php /*%%SmartyHeaderCode:1080855e3cd41223636-39057843%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2884855e527c612bdf3-32687454%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'af1589875d79de657a5c89e53a7f10f2556139d7' => 
     array (
       0 => 'E:\\phpspace\\chat\\web\\view\\main.html',
-      1 => 1440942179,
+      1 => 1441074982,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1080855e3cd41223636-39057843',
+  'nocache_hash' => '2884855e527c612bdf3-32687454',
   'function' => 
   array (
   ),
@@ -21,9 +21,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_55e3cd41282898_95423546',
+  'unifunc' => 'content_55e527c61ab1a3_41620532',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55e3cd41282898_95423546')) {function content_55e3cd41282898_95423546($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_55e527c61ab1a3_41620532')) {function content_55e527c61ab1a3_41620532($_smarty_tpl) {?><!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -71,10 +71,37 @@ resource/js/msg.js" type="text/javascript"></script>
 	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
 }
+#chathead{
+   height:50px;
+}
+.chathead1{
+float: left;
+font-size: xx-large;
+margin-top: 10px;
+margin-left: 500px;
+}
+.chathead2{
+float: right;
+margin-top: 10px;
+margin-right: 10px;
+cursor:pointer;
+}
+.chathead3{
+float: right;
+margin-top: 10px;
+margin-right: 130px;
+cursor:pointer;
+}
 </style>
 </head>
-<body>
+<body >
 	<div class="container-fluid">
+	    <div id="chathead">
+	    <div class="chathead1">聊天室</div>
+	    <div class="chathead3" id="btnOut">【退出】</div>
+	    <div class="chathead2">【修改昵称】</div>
+
+	    </div>
 		<div class="row-fluid">
 			<div class="span2" id="user"></div>
 			<div class="span10">

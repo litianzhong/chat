@@ -59,5 +59,20 @@ class chatModel extends Model {
 		return $this->db->rawQuery($sql);
 	
 	}
+	/***
+	 * logout
+	 * @param String $id
+	 */
+	public function logout($id){
+		$sql="update session set flag='0' where  id=?";
+		$this->db->execute($sql,array($id));
+	}
+	/**
+	 * 更新控制表
+	 */
+	public function updateChatctrl(){
+		$sql="update chatctrl set state='0' where  1=?";
+		$this->db->execute($sql,array(1));
+	}
 	
 }

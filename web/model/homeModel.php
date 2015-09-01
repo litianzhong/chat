@@ -73,4 +73,35 @@ class homeModel extends Model {
 		$sql = "update session set state='1' where flag='1' and id<>?";
 		$this->db->execute ($sql,array($id));
 	}
+	/***
+	 * get count of this id
+	 * @param String $id
+	 */
+	public function valId($id) {
+		$sql = "select count(1) from member where  id=?";
+		return $this->db->valueQuery ($sql,array($id));
+	}
+	/***
+	 * insert user info into database
+	 * @param String $userid
+	 * @param String $username
+	 * @param String $password
+	 */
+	public function register($userid,$username,$password){
+		$sql="INSERT INTO member VALUES(?, ?, ?)";
+		return $this->db->execute($sql,array($userid,$username,$password));
+	}
+	
+	/**
+	 * 更新控制表
+	 */
+	public function updateChatctrl(){
+		$sql="update chatctrl set state='1' where  1=?";
+		$this->db->execute($sql,array(1));
+	}
+	
+	public function selectCtrl($id) {
+		$sql = "select state from chatctrl where  1=?";
+		return $this->db->valueQuery ($sql,array(1));
+	}
 }

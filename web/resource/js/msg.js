@@ -1,6 +1,7 @@
 $(function() {
 	chat.getMsgs();
 	$('#btnMsg').click(chat.sendMsg);
+	$('#btnOut').click(chat.logout);
 	
 });
 
@@ -58,5 +59,8 @@ var chat = {
 			}
 		});
 	},
+	logout:function(){
+		window.location.href=_request + "index.php/chat/logout";
+	}
 
 }

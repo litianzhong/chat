@@ -55,10 +55,10 @@ class homeController extends Controller {
          */
         public function login(){
         	$user=Application::$_lib["SessionAuth"]->get("_USER");
+        	$userid=Application::$_lib["SessionAuth"]->get("_ID");
         	if($user){
         		/***notice user*/
         		$this->dbLogin($userid,$user);
-     
         		$this->display("main.html");
         	}else{
         		$this->display("login.html");
@@ -66,11 +66,32 @@ class homeController extends Controller {
         	
         }
         /***
-         * 
+         * forward register.html
          */
         public function forRegister(){
         		$this->display("register.html");
         	 
+        }
+        /***
+         * validate id unique
+         */
+        public function valId(){
+        	$id=$_POST["id"];//
+        	$model=$this->model("home");//获得model
+        	$result=$model->valId($id);
+        	echo json_decode($result);
+        
+        }
+        /***
+         * register
+         */
+        public function register(){
+        	$userid=$_POST["userid"];
+        	$username=$_POST["username"];
+        	$password=$_POST["password"];
+        	$model=$this->model("home");//获得model
+        	$result=$model->register($userid,$username,$password);//insert info
+        	echo json_decode($result);
         }
         /***
          * record database
@@ -83,5 +104,13 @@ class homeController extends Controller {
         	$model->dbLogin($id,$name);//update or insert login info
         	$model->updateLogin($id);//notice others
         }
+        
+        function runThread()
+        {
+        	$fp = fsockopen('127.0.0.1', 80, $errno, $errmsg);
+        	fputs($fp, "GET chat/index.php/corn/corntablernrn");        //这里的第二个参数是HTTP协议中规定的请求头
+        	fclose($fp);
+        }
+        
 }
 
